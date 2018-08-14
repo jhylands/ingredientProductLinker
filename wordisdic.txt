@@ -1,0 +1,1057 @@
+from recipe_scrapers import scrape_me
+# give the url as a string, it can be url from any site listed below
+scrape_me = scrape_me('http://allrecipes.com/Recipe/Apple-Cake-Iv/Detail.aspx')
+scrape_me.title()
+scrape_me.total_time()
+scrape_me.ingredients()
+scrape_me.instructions()
+scrape_me.links()
+scrape_me = scrape_me('https://www.bbcgoodfood.com/recipes/2075/tomato-soup')
+from recipe_scrapers import scrape_me
+scraped = scrape_me('http://allrecipes.com/Recipe/Apple-Cake-Iv/Detail.aspx')
+scrape_me.ingredients()
+scraped.ingredients()
+scraped = scrape_me('http://allrecipes.com/Recipe/Apple-Cake-Iv/Detail.aspx')
+scraped.ingredients()
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/2075/tomato-soup')
+scraped.ingredients()
+scraped.links()
+scraped.total_time()
+scraped = scrape_me('https://www.jamieoliver.com/recipes/vegetables-recipes/tomato-soup/')
+scraped.total_time()
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/2075/tomato-soup')
+scraped.total_time()
+scraped.ingredients()
+scraped.ingredients()[0]
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/6652/naughty-chocolate-fudge-cake')
+scraped.ingredients()
+scraped.total_time()
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/epic-summer-salad')
+scraped.total_time()
+scraped.ingredients()
+print('/n'.join(scraped.ingredients()))
+print('\n'.join(scraped.ingredients()))
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/6652/naughty-chocolate-fudge-cake')
+print('\n'.join(scraped.ingredients()))
+import spacy
+nlp = spacy.load('en_core_web_sm')
+doc = nlp(scrapped.ingredients()[0])
+doc = nlp(scraped.ingredients()[0])
+for token in doc:
+    print(token.text, token.dep_, token.head.text, token.head.pos_,
+          [child for child in token.children])
+ nlp(scraped.ingredients()
+for token in doc:
+    print(token.text, token.dep_, token.head.text, token.head.pos_,
+          [child for child in token.children])
+import pint
+from pint import UnitRegistry
+ureg = UnitRegistry()
+ureg.parse_expression('100ml')
+ureg.parse_expression('100 tsp')
+ureg.parse_expression('100 tbsp')
+a = ureg.parse_expression('100 tbsp')
+a.to('ml')
+a = ureg.parse_expression('100 tsp')
+a.to('ml')
+a = ureg.parse_expression('1 tsp')
+a.to('ml')
+a = ureg.parse_expression('1 carrot')
+scraped = scrape_me('https://www.olivemagazine.com/recipes/quick-and-easy/dead-good-spaghetti-carbonara/')
+scraped = scrape_me('https://www.bbc.com/food/recipes/creamy_carbonara_74567')
+scraped = scrape_me('https://www.bbcgoodfood.com/recipes/1052/ultimate-spaghetti-carbonara')
+print('\n'.join(scraped.ingredients()))
+scraped.total_time()
+scraped.instructions()
+scraped.ingredients()[0]
+scraped.ingredients()[0].split(' ')[0]
+ureg.parse_expression(scraped.ingredients()[0].split(' ')[0])
+ureg.parse_expression(scraped.ingredients()[0].split(' ')[0]).to('tbsn')
+ureg.parse_expression(scraped.ingredients()[0].split(' ')[0]).to('tsp')
+ureg.parse_expression(scraped.ingredients()[0].split(' ')[0]).to('oz')
+scraped.ingredients()[0].split(' ')[2]
+scraped.ingredients()[0].split(' ')[1]
+ing = scraped.ingredients()[0].split(' ')[1]
+am = ureg.parse_expression(scraped.ingredients()[0].split(' ')[0])
+am
+am.to('ml')
+ureg.parse_expression('1 pint - 1 pint')
+ureg.parse_expression('1 pint')
+ap ureg.parse_expression('1 pint')
+ap = ureg.parse_expression('1 pint')
+am= 
+meter = ureg.parse_expression('1 meter')
+ap - meter
+am = ureg.parse_expression(scraped.ingredients()[0].split(' ')[0])
+am
+scraped.ingredients()[0].split(' ')[0]
+scraped.ingredients()[1].split(' ')[0]
+scraped.ingredients()[2].split(' ')[0]
+scraped.ingredients()[3].split(' ')[0]
+scraped.ingredients()[3].split(' ')[2]
+scraped.ingredients()[3].split(' ')[]
+scraped.ingredients()[3].split(' ')[1]
+nlp(scraped.ingredients()[3].split(' ')[1])
+doc = nlp(scraped.ingredients()[3].split(' ')[1])
+for teken in doc:
+	
+for token in doc:
+	print(token.head.pos_)
+doc = nlp(u'grams')
+for token in doc:
+	print(token.head.pos_)
+doc
+doc[0]
+doc[0].head.pos_
+am
+ing
+ings scraped.ingredients()[3]
+ings = scraped.ingredients()[3]
+doc = nlp(ings)
+doc
+for toekn in doc:
+	print(toekn.head.pos_)
+for toekn in doc:
+	print(toekn.tag_)
+def print_token(doc):
+	for token in doc:
+		print(token.tag)
+doc = nlp(u'100 grams of flour')
+print_token(doc)
+doc
+doc[0]
+doc[0].tag
+doc[0].tag_
+def print_token(doc):
+	for token in doc:
+		print(token.tag_)
+print_token(doc)
+doc = nlp(u'100g of flour')
+print_token(doc)
+doc
+doc[1]
+doc = nlp(u'2 limes')
+print_token(doc)
+doc = nlp(u'½ cucumber, halved lengthways, seeds scooped out and sliced on an angle')
+print_token(doc)
+doc = nlp(u'0.5 cucumber, halved lengthways, seeds scooped out and sliced on an angle')
+print_token(doc)
+doc = nlp(u'100g cucumber, halved lengthways, seeds scooped out and sliced on an angle')
+print_token(doc)
+doc = nlp(u'100g green cucumber')
+print_token(doc)
+doc = nlp(u'100g of green cucumber')
+print_token(doc)
+doc = nlp(u'100g green cucumber')
+print_token(doc)
+doc[1]
+ureg.parse_expression(scraped.ingredients()[0].split(' ')[0]).to('tbsn')
+doc
+doc[0:1]
+doc[0:2]
+doc1 = nlp(u'100 grams pasta')
+doc1[0:2]
+ureg.parse_expresion(doc1[0:2])
+ureg.parse_expression(doc1[0:2])
+ureg.parse_expression(string(doc1[0:2]))
+ureg.parse_expression(str(doc1[0:2]))
+ureg.parse_expression(str(doc[0:2]))
+doc2 = nlp(u'100 carrots')
+ureg.parse_expression(str(doc2[0:2]))
+ureg.parse_expression(str(doc[0:2]))
+# give the url as a string, it can be url from any site listed below
+from pint import UnitRegistry
+ureg = UnitRegistry() 
+ureg.parse_expression('1 pinch'
+)
+ureg.parse_expression('1 pinch').to('ml')
+exit()
+from pint import UnitRegistry
+ureg = UnitRegistry() 
+ureg.parse_expression('1 pinch')
+ureg.parse_expression('1 pinch').to('ml')
+ureg.parse_expression('1 smidge').to('ml')
+ureg.parse_expression('1 smidge').to('pinch')
+ureg.parse_expression('1 smidge').to('handful')
+ureg.parse_expression('1 handful').to('liters')
+from librecipe import *
+exir()
+exit()
+from librecipe import *
+recipe = get_recipe('https://www.bbcgoodfood.com/recipes/cauliflower-steaks-roasted-red-pepper-olive-salsa')
+for ingredient in recipe.ingredients():
+	print(parse_ingredients(ingredient))
+recipe = get_recipe('https://www.bbcgoodfood.com/recipes/seared-steak-celery-pepper-caponata')
+for ingredient in recipe.ingredients():
+	print(parse_ingredients(ingredient))
+nlp('baslamic')[0].tag_
+nlp('baslamic vinigar')[0].tag_
+nlp('baslamic vinigar')[0].pos_
+recipe = get_recipe('https://www.bbcgoodfood.com/recipes/strawberry-elderflower-gateau')
+for ingredient in recipe.ingredients():
+	print(parse_ingredients(ingredient))
+doc = nlp(u'2 x 200g sponge flan cases (25cm)')
+doc
+for tag in doc:
+	print(tag.top_)
+for tag in doc:
+	print(tag.pos_)
+doc = nlp(u'650ml double cream')
+doc[0]
+doc[1]
+recipe = get_recipe('https://www.bbcgoodfood.com/recipes/1269/chilli-prawn-linguine')
+for ingredient in recipe.ingredients():
+	print(parse_ingredients(ingredient))
+recipe.ingredients()[0]
+quantity, ingredient = parse_ingredients(recipe.ingredients()[0])
+quantity.to('oz')
+recipe = get_recipe('http://allrecipes.co.uk/recipe/43354/caramel-latte-ice-pops.aspx')
+recipe = get_recipe('http://dish.allrecipes.com/easy-healthy-zucchini-main-dish-recipes/?internalSource=hp_carousel%2001_14%20Easy%20Healthy%20Zucchini%20Main%20Dishes&referringContentType=home&referringPosition=caro')
+recipe = get_recipe('https://www.allrecipes.com/recipe/10833/refrigerator-cookies-iii/?internalSource=streams&referringId=362&referringContentType=recipe%20hub&clickId=st_trending_b')
+recipe.title()
+for ingredient in recipe.ingredients():
+	print(parse_ingredients(ingredient))
+doc = nlp(u'3 cups all-purpose flour')
+doc[0]
+doc[0].pos_
+doc[0].tag_
+exit
+exit()
+exit
+sort([1,2])
+[1,2].sort()
+a = [1,2]
+a.sort()
+a
+exit()
+import numpy as np
+a = np.random.normal(0,1)
+a
+exit()
+from beautifulsoup import beautifulsoup as bs
+from bs4 import beautifulSoup as bs
+from bs4 import BeautifulSoup as bs
+f = open('../bbcgoodfood.xml','r')
+soup = bs(f.read())
+soup.find_all('loc')
+loc = soup.find_all('loc')
+loc[0].get_text()
+len(loc)
+import re
+id_ re.match('.*\/(\d+)\/.*','https://www.bbcgoodfood.com/recipes/1649633/cauliflower-and-macaroni-cheese')
+id_ re.match(r'.*\/(\d+)\/.*','https://www.bbcgoodfood.com/recipes/1649633/cauliflower-and-macaroni-cheese')
+id_ = re.match(r'.*\/(\d+)\/.*','https://www.bbcgoodfood.com/recipes/1649633/cauliflower-and-macaroni-cheese')
+id_ = re.match('.*\/(\d+)\/.*','https://www.bbcgoodfood.com/recipes/1649633/cauliflower-and-macaroni-cheese')
+id_.group(0)
+id_.group(1)
+exit()
+url = 'https://www.bbcgoodfood.com/recipes/1649633/cauliflower-and-macaroni-cheese'
+url[:33]
+url[:34]
+exit()
+from recipe_scrapers import scrape_me
+f = open('bbcgoodfood/1110','r')
+recipe = scrape_me(f,1)
+from recipe_scrapers import BBCGoodFood
+recipe = BBCGoodFood(f,True)
+recipe.title()
+recipe.instructions()
+recipe.ingredients()
+exit()
+import pickle
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+mean
+from numpy import mean
+mean([len(recipe['ingredients']) for recipe in recipes])
+6.2*20800
+exit()
+import pickle 
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+from collections import counter
+from collections import Counter
+import spacy 
+nlp = spacy.load('en')
+titles = [recipe['title'] for recipe in recipes]
+words = []
+for title in titles:
+	doc = nlp(title)
+	words += [token.text for token in self.doc if token.is_stop != True and token.is_punct != True]
+for title in titles:
+	doc = nlp(title)
+	words += [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+Counter(words)
+import readline
+readline.write_history_file('getTitleWordCount.txt')
+exit()
+import pickle 
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+import spacy 
+nlp = spacy.load('en')
+titles = [recipe['title'] for recipe in recipes]
+titles
+for title in titles:
+	doc = nlp(title)
+	words += [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+words = []
+for title in titles:
+	doc = nlp(title)
+	words += [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+count = Counter(words)
+for title in titles:
+	doc = nlp(title)
+	words += [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+words
+Counter(words)#
+from collections import Counter
+count
+count = Counter(words)
+count[0]
+count['chocolate']
+count['Chocolate']
+count.most_common(2)
+type(count)
+exit()
+help
+help()
+quit
+import readline
+readline.parse_and_bind("tab: complete")
+ansa = 1
+exit()
+zooquest = 5
+a = [1,2,3,4,5]
+for e in a:
+	zooquest
+exit()
+import pickle
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+recipes[0]
+len(recipes)
+ingredients = []
+for recipe in recipes:
+	print(recipe['title'])
+	ingredients += recipe['ingredients']
+len(ingredients)
+f = open('ingredients.txt','w')
+for ingredient in ingredients:
+	f.write(ingredient + '\n')
+f.close()
+exit()
+ingredients = []
+f = open('../data/ingredients.txt','r')
+ingredients = list(f)
+ingredients[0]
+text = f.read()
+text[:100]
+f = open('../data/ingredients.txt','r')
+text = f.read()
+text[:100]
+f.close()
+import re
+len(re.findall('^\d+[a-z].*',text))
+len(re.findall('^\d+[a-z].*',text,flags=re.MULTILINE))
+len(ingredients)
+len(re.findall('^\d+[a-z]\w?\/\w?\d+',text,flags=re.MULTILINE))
+len(re.findall('^\d+[a-z]*-\d+',text,flags=re.MULTILINE))
+len(re.findall('^\d+[a-z]\w[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^\d+[a-z]?\w[a-z]',text,flags=re.MULTILINE))
+a = re.findall('^\d+[a-z]?\w[a-z]',text,flags=re.MULTILINE)
+a
+len(re.findall('^\d+[a-z]?\w[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^\d+\w[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^\d+[g|ml]?\w[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^\d+[g|ml]\w[a-z]',text,flags=re.MULTILINE))
+re.findall('^\d+[g|ml]\w[a-z]',text,flags=re.MULTILINE)
+len(re.findall('^\d+[a-z]*\s[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^[a-z]',text,flags=re.MULTILINE))
+len(re.findall('^an',text,flags=re.MULTILINE))
+re.findall('^an',text,flags=re.MULTILINE)
+re.findall('^an.*',text,flags=re.MULTILINE)
+re.findall('^an\s.*',text,flags=re.MULTILINE)
+re.findall('an\s.*',text,flags=re.MULTILINE)
+re.findall('\s?[a|A]n\s.*',text,flags=re.MULTILINE)
+re.findall('^[a|A]n\s.*',text,flags=re.MULTILINE)
+re.findall('^[a|A]n\s.*$',text,flags=re.MULTILINE)
+re.findall('^[a|A]n?\s.*$',text,flags=re.MULTILINE)
+len(re.findall('^[a|A]n?\s.*$',text,flags=re.MULTILINE))
+len(re.findall('^\d+\w.*',text,flags=re.MULTILINE))
+len(re.findall('^\d+\w\s\w+',text,flags=re.MULTILINE))
+len(re.findall('^\d+\w{1,2}\s\w+',text,flags=re.MULTILINE))
+len(re.findall('^\d+\s\w+',text,flags=re.MULTILINE))
+len(re.findall('^\d+\w*-\d+',text,flags=re.MULTILINE))
+len(re.findall('\(\d+\w?\)',text,flags=re.MULTILINE))
+len(re.findall('\(\s?\d+\w?\s?\)',text,flags=re.MULTILINE))
+re.findall('\(\d+\w?\)',text,flags=re.MULTILINE)
+re.findall('\(.{0,20}\d+\w?.{0,10}\)',text,flags=re.MULTILINE)
+len(re.findall('\(.{0,20}\d+\w?.{0,10}\)',text,flags=re.MULTILINE))
+len(re.findall('^\w.*\(.{0,20}\d+\w?.{0,10}\).*$',text,flags=re.MULTILINE))
+len(re.findall('^\w.*\(about\s\d+\w?.{0,10}\).*$',text,flags=re.MULTILINE))
+mport readline
+import readline
+readline.tofile('ingredientregex.txt')
+readline.write_history_file('ingredientregex.txt')
+exit()
+import scrapy
+exit()
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor as getLinks
+import requests as re
+page = re.get('https://www.sainsburys.co.uk/shop/gb/groceries/')
+SANO ='https://www.sainsburys.co.uk/shop/gb/groceries/'
+links = getLinks(allow='\/groceries\/')
+links
+links(page.text)
+links.extract_links(page.text)
+links.extract_links(page)
+import re
+g = re.search('£(\d+\.\d{2})\/\w+','£1.50/unit')
+g.group(0)
+g.group(1)
+g = re.search('£(\d+\.\d{2})\/\w+','£1.50/unit £0.10/100g')
+g.group(1)
+g.group(0)
+A = {'a':'b','b':'c'}
+for key,value in A:
+	print('%s:%s'%(key,value))
+exit()
+A = {'a':'b','b':'c'}
+B= {'c':'d','e':'f'}
+{A**, B **}
+{A** B **}
+{**A, **B}
+B= {'d':'d','e':'f'}
+{**A, **B}
+reg
+import re as reg
+PPU_group = reg.search('£(\d+\.\d{2})\/(\w+)','\n £1.60/unit')
+PPU_group.group(1)
+PPU_group = reg.search('£(\d+\.\d{2})\/(\w+)','\n £1.60/unit or somth')
+PPU_group.group(1)
+PPU_group.group(2)
+import pickle
+with open('output.pkl','rb') as f:
+	a = pickle.load(f)
+exit()
+import pickle
+with open('output.pkl','rb') as f:
+	a = pickle.load(f)
+a
+list(a.keys())
+with open('output1.pkl','rd') as f:
+	b=pickle.load(f)
+with open('output1.pkl','rb') as f:
+	b=pickle.load(f)
+b
+list(b.keys())
+with open('output2.pkl','rb') as f:
+	c=pickle.load(f)
+c
+c = c['file']
+list(c.keys())
+with open('output3.pkl','rb') as f:
+	d = pickle.load(f)
+d
+with open('output.james','rb') as f:
+	james = pickle.load(f)
+exit()
+with open('output.james','rb') as f:
+	james = pickle.load(f)
+import pickle
+with open('output.james','rb') as f:
+	james = pickle.load(f)
+with open('output.james','rb') as f:
+	james = pickle.load(f)
+exit()
+import json
+json.dump('£')
+json.dumps('£')
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+len(james)
+james[0]
+james[0].keys()
+james[2].keys()
+james[3].keys()
+james[1].keys()
+james[1]['Manafacturer']
+james[1]['Manufacturer']
+james[1]['img']
+a = json.loads(james[1]['img'])
+a = json.loads(james[1]['img'][1:-1])
+print(james[1]['img'])
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+len(james)
+james[0].keys()
+james[0].['title']
+james[0]['title']
+james[0]['img']
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+james[0]['title']
+james[0].keys()
+james[0]['PricePerMesure']
+james[0]['PricePerMeasure']
+james[0]['PricePerMeasureMeasure']
+james[2]['PricePerMeasureMeasure']
+james[1]['PricePerMeasureMeasure']
+james[1]['title']
+james[2]['title']
+exit()
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+import json
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+len(james)
+james[6]['title']
+print('\n'.join([a['title'] for a in james])
+)
+print('\n'.join([a['size'] for a in james]))
+james[5].keys()
+james[5].'Description']
+james[5]['Description']
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+james[0]
+james[0]['title']
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+james
+len(james)
+james.keys()
+james[0].keys()
+james[1].keys()
+exit
+exit()
+import json 
+with open('output.james','r') as f
+with open('output.james','r') as f:
+	james = json.loads(f.read())
+len(james)
+[a['title'] for a in james]
+exit(
+)
+import json 
+with open('run1.json','r') as f:
+	products = json.loads(f.read())
+titles = [a['title'] for a in products]
+import re as reg
+xml = [1 if 'xml' in product else 0 for product in products]
+sum(xml)
+product[0]['title']
+products[0]['title']
+products[0]['xml']
+products[0].keys()
+products[0]['Description']
+product['title'].lower().find('flour')
+a = 'A'
+a.lower()
+a
+is_flour = [product['title'].lower().find('flour') for product in products]
+sum(is_flour )
+is_flour = [0 if product['title'].lower().find('flour')==-1 else 1 for product in products]
+sum(is_flour )
+is_flour = [0 if product['title'].lower().find('sainsbury\'s')==-1 else 1 for product in products]
+sum(is_flour )
+is_flour = [0 if product['title'].lower().find('sugar')==-1 else 1 for product in products]
+sum(is_flour )
+sugars = [product for product in products if product['title'].lower().find('sugar')!=-1]
+sugars
+[s['title'] for s in sugars]
+'\n'.join([s['title'] for s in sugars])
+print('\n'.join([s['title'] for s in sugars]))
+clear()
+clr
+clr()
+with open('output.james','r') as f:
+	products = json.loads(f.read())
+len(products)
+products[3000]['title']
+products[3000]['img']
+sugars = [product for product in products if product['title'].lower().find('sugar')!=-1]
+'\n'.join([s['title'] for s in sugars])
+print('\n'.join([s['title'] for s in sugars]))
+len(sugars)
+sugarsDef = [product for product in products if product['title'].lower().find('sugar')!=-1 and not product['title'].lower().find('no suagr')!=1 and not product['title'].lower().find('sugar free')!=-1]
+len(sugarsDef)
+product['title'].lower().find('sugar')!=-1 and not product['title'].lower().find('no suagr')!=1 and not product['title'].lower().find('sugar free')!=-1
+products[-4]
+prodyct = products[-4]
+product = products[-4]
+product['title'].lower().find('sugar')!=-1 and not product['title'].lower().find('no suagr')!=1 and not product['title'].lower().find('sugar free')!=-1
+product['title'].lower().find('sugar')!=-1 
+product['title']
+sugars[-4]
+sugars[-4]['title']
+product = sugars[-4]
+product['title'].lower().find('sugar')!=-1 and not product['title'].lower().find('no suagr')!=1 and not product['title'].lower().find('sugar free')!=-1
+product['title'].lower().find('sugar')!=-1 
+not product['title'].lower().find('sugar free')!=-1
+product['title'].lower().find('sugar')!=-1 and product['title'].lower().find('no suagr')==1 and product['title'].lower().find('sugar free')==-1
+product['title'].lower().find('sugar free')==-1
+product['title'].lower().find('no sugar')==-1
+product['title'].lower().find('sugar')!=-1
+product['title'].lower().find('sugar')!=-1 and product['title'].lower().find('no suagr')==1 and product['title'].lower().find('sugar free')==-1
+product['title'].lower().find('sugar')!=-1 and product['title'].lower().find('no sugar')==-1 and product['title'].lower().find('sugar free')==-1
+sugarDef = [product for product in products if product['title'].lower().find('sugar')!=-1 and product['title'].lower().find('no sugar')==-1 and product['title'].lower().find('sugar free')==-1]
+len(sugarDef)
+product.keys()
+product['xml']
+product['XML']
+product['title']
+product['PricePerMEsure']
+product['PricePerMesure']
+product['PricePerMeasure']
+product['PricePerMeasureMeasure']
+sugarDef = [product for product in products if product['title'].lower().find('caster sugar')!=-1]
+'\n'.join(a['title'] for a in sugarDef]
+'\n'.join([a['title'] for a in sugarDef])
+print('\n'.join([a['title'] for a in sugarDef]))
+print('\n'.join(["%s:\t%s/%s"%(a['title'],a['PricePerMeasure'],a['PricePerMeasureMeasure']) for a in sugarDef]))
+print('\n'.join(["%s:\t\t%s/%s"%(a['title'],a['PricePerMeasure'],a['PricePerMeasureMeasure']) for a in sugarDef]))
+exit()
+import requests as re
+import re as reg 
+from tesco_spider import GrocerySpider
+exit()
+import json 
+import pickle
+with open('output.json' ,'r') as f:
+	products = json.loads(f.read())
+with open('output.json' ,'r') as f:
+with open('output.james' ,'r') as f:
+	products = json.loads(f.read())
+with open('products.pkl','wb') as f:
+	pickle.dumps(products,f)
+with open('products.pkl','wb') as f:
+	pickle.dump(products,f)
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+type(recipe_
+)
+type(recipe)
+type(recipes)
+len(recipes)
+with open('ingredients.txt' ,'r') as f:
+	ingredients = f.read().split('\n')
+len(ingredients)
+[1 if re.search(r'^\d+[a-z?\s[a-z]',i) else 0 for i in ingredients]
+from re import search
+[1 if search(r'^\d+[a-z?\s[a-z]',i) else 0 for i in ingredients]
+sum([1 if search(r'^\d+[a-z?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^(\d+\.\d{0,2}[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^(\d+\.\d{0,2})[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^(\d+\.?\d{0,2})[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+\.?[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+[a-z]+\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+\.?[a-z]?\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+\.?[a-z]+\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^\d+\.?[a-z]*\s[a-z]',i) else 0 for i in ingredients])
+sum([1 if search(r'^(\d+)[a-z]*\s[a-z]',i) else 0 for i in ingredients])
+a = [search(r'^(\d+)[a-z]*\s[a-z]',i) for i in ingredients]
+a = [e for e in a if e !=  None]
+len(a)
+a[0]
+a[0].group(1)
+a[3876].group(1)
+a[38766].group(1)
+a[38966].group(1)
+a = [search(r'^(\d+)([a-z]*)\s([[a-z]\s]+)',i) for i in ingredients]
+len(a)
+a = [e for e in a if e !=  None]
+len(a)
+ingredients[100]
+a = [search(r'^(\d+)([a-z]*)\s(([a-z]\s)+)',i) for i in ingredients]
+a = [e for e in a if e !=  None]
+len(a)
+a[0]
+a[0].group(1)
+a[0].group(2)
+a[0].group(3)
+a[0].group(4)
+a[0].group()
+a[0].group(5)
+a[0].group(4)
+a = [search(r'^(\d+)([a-z]*)\s(([a-z]\s?)+)',i) for i in ingredients]
+a = [e for e in a if e !=  None]
+len(a)
+a[0]
+a[0].group(1)
+a[0].group(2)
+a[0].group(3)
+a[0].group(4)
+a[0].group(5)
+a[100].group(3)
+a[3000].group(3)
+a[7657].group(3)
+a[7657].group(2)
+a[7657].group(1)
+a[7657].group(3)
+a[876].group(3)
+a[999].group(3)
+a[30].group(3)
+a[30].group(2)
+a[30].group(1)
+b = [search(r'^(\d+)([a-z]*)\s(?:(?<=\s)(grams|tsp|tbsp|liters)(?=\s))\s((?:[a-z]\s?)+)',i) for i in ingredients]
+def remNone(arr):
+	return [elm for elm in arr if elm!=None]
+b = rmNone(b)
+b = remNone(b)
+len(b)
+b[0]
+b[0].group(1)
+b[0].group(2)
+b[0].group(3)
+b[0].group(4)
+b[1000].group(4)
+b[1000].group(3)
+b[1000].group(2)
+b[1000].group(1)
+b[12345].group(4)
+b[12345].group(3)
+b[12345].group(1)
+ingredient = reg.compile("^(?:(\d+)\s?((?:(?:g|ml|l|kg|gram|kilogram)s?))?\s)?((?:[a-z]+\s?)+)")
+import re as reg
+ingredient = reg.compile("^(?:(\d+)\s?((?:(?:g|ml|l|kg|gram|kilogram)s?))?\s)?((?:[a-z]+\s?)+)")
+ingredients
+ingredient_re = reg.compile("^(?:(\d+)\s?((?:(?:g|ml|l|kg|gram|kilogram)s?))?\s)?((?:[a-z]+\s?)+)")
+ingredient_re = reg.compile("^(?:(\d+)\s?((?:(?:g|ml|l|kg|gram|kilogram|tsp|teaspoon|tbsp|tablespoon|liter|cup)s?))?\s)?((?:[a-z]+\s?)+)")
+attempt = [ingredient_re.search(ingredient) for ingredient in ingredients]
+attempt[0]
+attempt[0].group(1)
+attempt[0].group(2)
+attempt[0].group(3)
+attempt[10000].group(3)
+attempt[10040].group(3)
+attempt[10040].group(2)
+attempt[10040].group(1)
+attempt[10440].group(3)
+attempt[10446].group(3)
+attempt[14446].group(3)
+attempt[14444].group(3)
+attempt[14444].group(2)
+attempt[14444].group(1)
+ingredients[14444]
+attempt[155].group(1)
+attempt[155].group(3)
+attempt[1555].group(3)
+attempt[15555].group(3)
+attempt[15555].group(2)
+attempt[15555].group(1)
+attempt[15555].group(3)
+attempt[25555].group(3)
+ingredients[25555]
+len(remNone(attempt))
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if attempt==None]
+len(error)
+attempt = [ingredient_re.search(ingredient) for ingredient in ingredients]
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if attempt==None]
+len(error)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+len(error)
+error[0]
+error[2]
+error[3]
+error[4]
+error[5]
+print('\n'.join(error[:100])
+)
+attempt = [ingredient_re.search(ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+unicode('\U00BD')
+str('\U00BD')
+str('\u00BD')
+ingredient_re2 = reg.compile('[a-z]+\s?)+)'')
+attempt = [ingredient_re1.search(ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+error[0]
+error[2]
+error[3]
+len(error)
+print('\n'.join(error[:100])
+)
+len(remNone(attempt))/len(ingredients)
+ingredients_re2 = reg.complie('^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\/((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?)?\s((?:[a-z]+\s?)+)')
+ingredients_re2 = reg.compile('^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\/((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?)?\s((?:[a-z]+\s?)+)')
+attempt = [ingredient_re2.search(ingredient.lower()) for ingredient in ingredients]
+attempt = [ingredients_re2.search(ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+error[0]
+ingredients_re2.search(error[0])
+ingredients_re2 = reg.compile("^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\/((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?)?\s((?:[a-z]+\s?)+)")
+ingredients_re2.search(error[0])
+regex = r"^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\s?\/\s?((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?)?\s((?:[a-z]+\s?)+)"
+attempt = [reg..search(regex,ingredient.lower()) for ingredient in ingredients]
+attempt = [reg.search(regex,ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+error[0]
+error[1]
+error[2]
+error[3]
+error[4]
+error[5]
+error[6]
+error[7]
+error[8]
+error[9]
+error[0]
+error[10]
+error[11]
+regex = r"^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\s?\/\s?((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?\s)?((?:[a-z]+\s?)+)"
+attempt = [reg.search(regex,ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+error[0]
+error[1]
+error[2]
+print('\n'.join(error[:100])
+)
+len(error)
+regex = r"^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-|\d+\s[\u00BC-\u00BE])+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\s?\/\s?((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?\s)?((?:[a-z]+\s?)+)"
+attempt = [reg.search(regex,ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+len(error)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+len(error)
+error[0]
+error[:100]
+regex = r"^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|\s?-\s?|\d+\s[\u00BC-\u00BE])+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\s?\/\s?((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?\s)?((?:[a-z]+\s?)+)"
+attempt = [reg.search(regex,ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+error = [ingredient for ingredient,match in zip(ingredients,attempt) if match==None]
+len(error)
+print(error[:100)
+print(error[:100])
+"{num}".format(num='5')
+reg.search(r'{num}}.format(num='\d'),'5')
+reg.search(r'{num}'.format(num='\d'),'5')
+reg.search(r'{num}'.format(num='\d'),'5',reg.VERBOSE)
+reg.search(r'{num} '.format(num='\d'),'5',reg.VERBOSE)
+reg.search(r'{num} #instructions'.format(num='\d'),'5',reg.VERBOSE)
+reg.search(r'{num} #instructions'.format(num='\d'),'5')
+regex = '''
+      ^ #start of string
+      ({num}) #capture the ammount
+      \s? #there may be a space between the ammount and the unit
+      ({unit})? #there may be a unit
+  
+      (\s?\/\s? the ammount might be represented in two units
+          ({num})
+          \s?
+          ({unit}?)
+      )?
+      \s #there is then a space
+      ({words}) #one or more words describing the item
+  
+  '''
+  number_re = '(?:(?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)'
+  unit_re = '((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?'
+  words_re = '((?:[a-z]+\s?)+)'
+number_re = '(?:(?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)'
+unit_re = '((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?'
+words_re = '((?:[a-z]+\s?)+)'
+regex = regex.format(num=number_re,unit=unit_re,words=words_re)
+print(regex)
+reg.search(regex,'5 bananas')
+reg.search(regex,'5ml bananas')
+reg.search(regex,'5ml bananas',reg.VERBOSE)
+t = reg.search(regex,'5ml bananas',reg.VERBOSE)
+t.group(1)
+t.group(2)
+t.group(3)
+t.group(4)
+t.group(5)
+t.group(6)
+t.group(7)
+t.group(8)
+t.group(9)
+t.group(10)
+t = reg.search(regex,'5ml/6oz bananas',reg.VERBOSE)
+t.groups()
+t = reg.search(regex,'5ml / 6oz bananas',reg.VERBOSE)
+t
+t = reg.search(regex,'5-6ml bananas',reg.VERBOSE)
+t
+t.group(1)
+t.group(2)
+t.group(3)
+t.group(4)
+t.group(5)
+t.group(6)
+t.group(7)
+t.group(8)
+list(t)
+t.groups
+t.groups()
+''.format(postcode='5')
+who
+who()
+globals()
+t.group(1)
+regex = r"^(?:((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|\s?-\s?|\d+\s[\u00BC-\u00BE])+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?(?:\s?\/\s?((?:\d|[\u00BC-\u00BE]|[\u2150-\u215E]|\.|-)+)\s?((?:(?:cm|g|oz|ml|l|kg|gram|kilogram|tsp|teaspoon|tbspn|tbsp|tablespoon|liter|cup|pint|fl oz)s?))?)?\s)?((?:[a-z]+\s?)+)"
+ingreSplit = [reg.search(regex,ingredient.lower()) for ingredient in ingredients]
+len(remNone(attempt))/len(ingredients)
+ingreSplit[0]
+ingreSplit[0].groups()
+ingreNames = [ingre.group(5) for ingre in ingreSplit]
+ingreNames = [ingre.group(5) for ingre in ingreSplit  if ingre!=None]
+ingreNames[0]
+ingreNames[100]
+ingreNames[111]
+ingreNames[11101]
+ingreNames[11111]
+products[0]
+products[0]['title']
+productTitles = [p['title'] for p in products]
+exists = [p.find('garlec cloves')!=-1 for p in productTitles]
+sun(exists)
+sum(exists)
+exists = [p.find('garlic cloves')!=-1 for p in productTitles]
+sum(exists)
+exists = [p.find('garlic')!=-1 for p in productTitles]
+sum(exists)
+exists = [p.lower().find('garlic')!=-1 for p in productTitles]
+sum(exists)
+exists = [p.lower().find('garlic cloves')!=-1 for p in productTitles]
+sum(exists)
+[p for p in productTitles if p.lower().find('garlic cloves')!=-1]
+[p for p in productTitles if p.lower().find('garlic')!=-1]
+[p for p in productTitles if p.lower().find('garlic')!=-1 and p.lower().find('cloves')]
+[p for p in productTitles if p.lower().find('garlic')!=-1 and p.lower().find('cloves')!=-1]
+ingreNames[11111]
+[p for p in productTitles if p.lower().find('buttermilk')!=-1]
+ingreNames[11177]
+[p for p in productTitles if p.lower().find('caster sugar')!=-1]
+print('\xa0')
+import spacy 
+import spacy
+import spacy as learning
+exit()
+import spacy
+spacy.load('en')
+reg
+re
+exit()
+import spacy
+spacy.load('2n')
+spacy.load('en')
+nlp = spacy.load('en')
+doc = nlp('Sainsbury's Garlic
+doc = nlp("Sainsbury's Garlic")
+do
+doc
+doc.tag_
+doc[0].tag_
+doc[1].tag_
+doc = nlp("Sainsbury's White Caster Sugar 500g")
+doc[0]
+doc[1]
+doc[2]
+doc[3]
+for tag in doc:
+	print(tag.tag_)
+for ent in doc.ents:
+	print(ent.text,ent.label_)
+word_capture_re = r"^([a-zA-Z]+\s+)+(—?[a-z]+\.)"
+with open('words.txt' ,'r') as f:
+	dictionary = f.read().split('\n')
+dictionary[0]
+dictionary[1]
+dictionary[2]
+dictionary[3]
+dictionary[:100]
+[re.search(word_capture_re,a) for a in dictionary]
+import re
+[re.search(word_capture_re,a) for a in dictionary]
+matched_dic = [re.search(word_capture_re,a) for a in dictionary]
+for group in matched_dic:
+	
+d = {}
+for group in matched_dic:
+	try:d[group.group(2)] = group.group(1)
+	except:
+		pass
+d.keys()
+d['-n']
+d['—n']
+d['symb']
+list(d.keys())
+list(d.keys())[-2]
+d['symb.']
+for group in matched_dic:
+	try:d[group.group(2)] = group.group(1)
+	except:
+for group in matched_dic:
+	try:
+		d[group.group(2)].append(group.group(1))
+	
+a = '5'
+a.append(6)
+matched_error_thing = re.match('','')
+matched_error_thing
+matched_error_thing.group(10)
+for g in matched_dic:
+	try:
+		d[g.group(2)].append(g.group(1))
+	except AttributeError:
+		d[g.group(2)] = [g.group(1)]
+	except:
+		pass
+for g in matched_dic:
+matched_dic = [a for a in matched_dic if a!=None]
+for g in matched_dic:
+	try:
+		d[g.group(2)].append(g.group(1))
+	except AttributeError:
+		d[g.group(2)] = [g.group(1)]
+d.keys()
+d['—n.']
+d['—n.'][0]
+d['—n.'][100]
+d['—n.'][200]
+d['—n.'][300]
+d['—n.']
+len(d['—n.'])
+inv_d = {v: k for k, v in d.items()}
+len(d.items())
+inv_d = {v_: k for v_ in v for k, v in d.items()}
+inv_d = {i:j for i,j in sum([[(v_,k) for v_ in v] for k, v in d.items()],[])}
+inv_d['Garlic  ']
+inv_d = {i.trim():j for i,j in sum([[(v_,k) for v_ in v] for k, v in d.items()],[])}
+inv_d = {i.strip():j for i,j in sum([[(v_,k) for v_ in v] for k, v in d.items()],[])}
+inv_d['Garlic']
+inv_d['James']
+inv_d['Sugar']
+inv_d['White']
+inv_d['Blue']
+inv_d['Green']
+inv_d['Left']
+inv_d['Mother']
+inv_d['Butter']
+inv_d['Buttermilk']
+inv_d['Sainsbury']
+inv_d['Sainsbury's']
+inv_d['Sainsbury\'s']
+inv_d['Sainsburys']
+inv_d['Cherry']
+inv_d['Roll']
+inv_d['Rolling pin']
+inv_d['Board']
+import readline
+readline.write_history_file('wordisdic.txt')

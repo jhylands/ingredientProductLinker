@@ -120,3 +120,8 @@ Session.vim
 tags
 # Persistent undo
 [._]*.un~
+
+#Too big a files
+output.james
+products.pkl
+
