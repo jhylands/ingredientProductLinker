@@ -1,0 +1,182 @@
+from wordType import wordType
+word = wordType()
+from wordType import wordType
+word = wordType()
+exit()
+word = wordType()
+from wordType import wordType
+word = wordType()
+exit()
+from wordType import wordType
+word = wordType()
+d = {}
+d['abbr.'] =5
+exit()
+from wordType import wordType
+word = wordType()
+word('Bat')
+word('Bat1')
+word('Pot')
+word('Pan')
+with open('product.james','r') as f:
+	import json
+	products = json.loads(f.read())
+with open('output.james','r') as f:
+	import json
+	products = json.loads(f.read())
+from ingToPro import getStructure
+getStructure('')
+print(getStructure(''))
+re
+import re
+re.sub('\t|\s|\n','',getStructure(''))
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+getStructure('')
+print(getStructure(''))
+exit()
+from ingToPro import getStructure
+getStructure('')
+print(re.sub('\t|\s|\n','',getStructure('')))
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+exit()
+from ingToPro import getStructure
+import re
+print(re.sub('\t|\s|\n','',getStructure('')))
+getStructure('').match('5 apples')
+exit()
+from ingToPro import getStructure
+getStructure('').match('5 apples')
+import re
+getStructure('').match('5 apples')
+getStructure('')
+exit()
+from ingToPro import getStructure
+getStructure()
+getStructure('')
+getStructure('').match('6 apples')
+getStructure('').match('6 apples').group(1)
+getStructure('').match('6 apples').group(2)
+getStructure('').match('6 apples').group(5)
+getStructure('').match('6 apples').group(13)
+exit()
+from ingToPro import getStructure
+getStructure('5 apples')
+products[0]
+import pickle
+with open('products.pkl','rb') as f:
+	pickle.loads(f)
+with open('products.pkl','rb') as f:
+	products = pickle.loads(f)
+with open('products.pkl','rb') as f:
+	products = pickle.load(f)
+len(products)
+with open('ingredients.txt','r') as f:
+	ingredients = f.read().split('\n')
+len(ingredients)
+structured_ingreients = [getStructure(ingredient) for ingredient in ingredients]
+def tryStructure(text):
+	try:
+		return getStructure(text)
+	catch:
+def tryStructure(text):
+	try:
+		return getStructure(text)
+	except:
+		return {}
+structured_ingreients = [tryStructure(ingredient) for ingredient in ingredients]
+structured_ingreients[0]
+structured_ingreients[1]
+structured_ingreients[2]
+structured_ingreients[3]
+structured_ingreients[4]
+structured_ingreients[5]
+structured_ingreients[6]
+structured_ingreients[7]
+structured_ingreients[8]
+structured_ingreients[9]
+from wordType import wordType
+wordType = wordType()
+def tryWord(word):
+	try:
+		wordType(word)
+	except:
+def tryWord(word):
+	try:
+		return wordType(word)
+	except:
+		return None
+w = [' '.join([tryWord(word) for word in i['name'].split(' ')]) for i in structured_ingreients]
+def tryWord(word):
+	try:
+		return wordType(word)
+	except:
+		return 'u.'
+w = [' '.join([tryWord(word) for word in i['name'].split(' ')]) for i in structured_ingreients]
+def tryStructure(text):
+	try:
+		return getStructure(text)
+	except:
+		return {'name':''}
+structured_ingreients = [tryStructure(ingredient) for ingredient in ingredients]
+w = [' '.join([tryWord(word) for word in i['name'].split(' ')]) for i in structured_ingreients]
+w[0]
+structured_ingreients[0]
+wordType('butter')
+wordType('Butter')
+wordType('Buter')
+wordType('Butter')
+wordType('Castle')
+wordType.dictionary.keys()
+exit()
+from wordType import wordType
+wordType = wordType()
+wordType('castle')
+import readline
+readline.write_history_file('wordline/2gettingnouns.txt')
