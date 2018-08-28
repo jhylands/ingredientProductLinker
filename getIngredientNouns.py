@@ -25,4 +25,4 @@ def main():
     wordType = wt()
     structured_ingreients = [tryStructure(ingredient) for ingredient in ingredients]
     w = [' '.join([tryWord(word,wordType) for word in i['name'].split(' ')]) for i in structured_ingreients]
-    return w
+    return w, structured_ingreients

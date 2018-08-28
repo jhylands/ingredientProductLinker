@@ -1,0 +1,911 @@
+from getIngredientNouns import main as m
+w = m()
+exit()
+from getIngredientNouns import main as m
+w = m()
+w[0]
+w[1]
+w[2]
+w[3]
+w[4]
+exit()
+from getIngredientNouns import main as m
+w = m()
+w[0]
+w[1]
+w[2]
+w[3]
+w[4]
+w[5]
+w[6]
+w[7]
+w[8]
+w[9]
+w[10]
+w[11]
+w[12]
+w[13]
+w[14]
+w[15]
+w[16]
+w[18]
+w[16]
+exit()
+with open('ingredients.txt','r') as f:
+	ingredients = f.read().split('\n')
+ingredients[0]
+ingredients[145]
+ingredients[1459]
+import pickle
+with open(;products.pkl','rb') as f:
+with open('products.pkl','rb') as f:
+	products = pickle.loads(f)
+with open('products.pkl','rb') as f:
+	products = pickle.load(f)
+len(products)
+products[0]
+products[0]['Title']
+products[0]['title']
+[product for product in products if product['title'].lower().find('golden')!=-1 and product['title'].lower().find('syrup')!=-1]
+syrups = [product for product in products if product['title'].lower().find('golden')!=-1 and product['title'].lower().find('syrup')!=-1]
+len(syrups)
+print('\n'.join([a['title'] for a in syrups])
+)
+syrups[0]['description']
+syrups[0]
+syrups[0].ke
+syrups[0]['Description']
+soups = [product for product in products if product['title'].lower().find('tommato')!=-1 and product['title'].lower().find('soup')!=-1]
+print('\n'.join([a['title'] for a in soups]))
+soups = [product for product in products if product['title'].lower().find('tomato')!=-1 and product['title'].lower().find('soup')!=-1]
+print('\n'.join([a['title'] for a in soups]))
+from neo4j.v1 import GraphDatabase
+exit()
+import neo4j
+exit
+exit()
+import numpy
+import neo4j
+from neo4j.v1 import *
+exit()
+import readline
+from py2neo import Graph
+graph = Graph("bolt://localhost:8687",auth=('neo4j','yusurfRules321'))
+tx = graph.begin()
+from py2neo import Node
+from py2neo import Relationship as Rel
+a = Node("Person",name='alice')
+tx.create(a)
+b = Node('Person',name='Bob')
+tx.create(b)
+ab = Rel(a,'KNOWS',a)
+tx.create(ab)
+tx.commit()
+graph.exists(ab)
+ab = Rel(a,'KNOWS',b)
+tx.commit()
+tx.create(ab)
+tx = graph.begin()
+tx.create(ab)
+tx.commit()
+exit()_
+exit()
+import pcikle
+import pickle
+exit()
+from py2neo import Graph
+import pickle
+with open('recipe.pkl','rb') as f:
+	recipes = pickle.load(f)
+graph = Graph("bolt://localhost:8687",auth=('neo4j','yusurfRules321'))
+add ='''
+with split(tolower("{title}"),' ') as text
+unwind range(0,size(text)-2) AS i
+merge (w1:Word {name: text[i]})
+merge (w2:Word {name: text[i+1]})
+merge (w1)-[:NEXT]->(w2)
+'''
+add
+graph.run(add,title=recipes[0]['title']).evaluate()
+graph.run(add,title=recipes[0]['title'])
+c = graph.run(add,title=recipes[0]['title'])
+c.current['name']
+c
+tx = graph.begin()
+c = tx.evaluate(add,title=recipes[0]['title'])
+c
+tx.commit()
+cypher = graph.cypher
+add1 = add.format(title=recipes[0]['title'])
+add1='''
+with split(tolower("yummy chocolate smartie cake"),' ') as text
+unwind range(0,size(text)-2) AS i
+merge (w1:Word {name: text[i]})
+merge (w2:Word {name: text[i+1]})
+merge (w1)-[:NEXT]->(w2)
+'''
+grpah.run(add1)
+graph.run(add1)
+graph.run(add1).execute()
+graph.run(add1).evaluate()
+add2 = '''
+with split(tolower("%s"),' ') as text
+unwind range(0,size(text)-2) AS i
+merge (w1:Word {name: text[i]})
+merge (w2:Word {name: text[i+1]})
+merge (w1)-[:NEXT]->(w2)
+'''
+for recipe in recipes:
+	graph.run(add2%recipe['title']).evaluate()
+print('\n'.join([a['title'] for a in recipes[0:100]]))
+import re
+re.escape("'")
+print(re.escape("'"))
+exit()
+print('\d{4}')
+print('&')
+exit()
+import pickle
+with open('recipes.pkl','rb') as f:
+	recipes = pickle.load(f)
+exit()
+#segmentation fault bashed out
+#reloading
+imort spacy
+import spacy
+nlp = spacy.load('en')
+from getIngPro import getIngPro
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+#
+ingredients,products,recipes,ingredients_names = ingPro()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+exit()
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+import spacy
+nlp = space.load('en')
+nlp = spacy.load('en')
+product_titles = [p['title'] for p in products]
+product_titel_documents = [nlp(title) for title in product_titles]
+product_titel_documents = [nlp(title) for title in product_titles[:100]
+product_titel_documents = [nlp(title) for title in product_titles[:100]]
+product_titel_documents[0]
+product_titel_documents[1]
+product_titel_documents[1].tags_
+[e.tag_ for e in product_titel_documents[1])
+[e.tag_ for e in product_titel_documents[1]]
+[e for e in product_titel_documents]
+[e.tag_ for e in product_titel_documents[1]]
+[e for e in product_titel_documents[1]]
+[e.tag_ for e in product_titel_documents[100]]
+[e.tag_ for e in product_titel_documents[99]]
+[e for e in product_titel_documents[99]]
+pickle
+import pcikel
+import pickle
+with open('test.pkl','wb') as f:
+	pickle.dump(product_titel_documents,f)
+with open('test.pkl','rb') as f:
+	a = pickle.load(f)
+a[0]
+from X import x
+from X import X
+products
+len(products)
+product[10000]['title']
+products[10000]['title']
+products[10001]['title']
+products[10002]['title']
+products[9999]['title']
+products[99998]['title']
+products[9998]['title']
+b=products[9998]['title']
+a = products[10000]['title']
+X(a.split(' '),b.split(' '))
+a
+b
+X(b.split(' '),a.split(' '))
+X([1,2],[1,3,6])
+X([1,2],[1,2])
+X([1],[1,2])
+X([1],[1,3,2])
+X([1,2],[1,3,2])
+def powerset(iterable):
+    "powerset([1,2,3]) --> () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3)"
+    s = list(iterable)
+    return chain.from_iterable(combinations(s, r) for r in range(len(s)+1))
+powerset([1,2,3])
+from intertools import powerset
+from itertools import powerset
+from itertools import chain
+powerset([1,2,3])
+list(powerset([1,2,3]))
+from itertools import combinations(
+from itertools import combinations
+powerset([1,2,3])
+list(powerset([1,2,3])
+)
+def powerset(iterable):
+    "powerset([1,2,3]) --> () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3)"
+    s = list(iterable)
+    return chain.from_iterable(list(combinations(s, r)) for r in range(len(s)+1))
+list(powerset([1,2,3])
+)
+for x in powerset(a.split(' ')):
+	print(list(X(x,b.split(' '))))
+PA =  powerset(a.split(' '))
+A = a.split(' ')
+B = b.split(' ')
+len(A)
+len(B)
+for x in powerset(B):
+	print(list(X(x,A)))
+PB = powerset(B)
+list(PB)
+for x in powerset(B):
+	print(list(X(list(x),A)))
+list(PB)[1]
+list(PB)
+PB = powerset(B)
+PB = list(PB)
+PB
+PB[1]
+len*PB[1])
+len(PB[1])
+PB[1]
+A
+B
+X(('Cadbury',),['Cadbury'])
+X(('Cadbury',),['Cadbury','Dairy'])
+X(('Cadbury',),A.split(' '))
+X(('Cadbury',),A)
+X(('Cadbury','Chocolate')),A)
+X(('Cadbury','Chocolate',)),A)
+X(('Cadbury','Chocolate',),A)
+for cadbury in PB:
+	print(cadbury)
+	print( X(cadbury,A))
+from X import X
+for cadbury in PB:
+	print( X(cadbury,A))
+for cadbury in PB:
+	print(cadbury)
+	print( X(cadbury,A))
+len((,))
+len(())
+()
+z = ()
+len(z)
+X((),A)
+from X import X
+from X import powerset
+exit()
+from X inport X,powerset
+from X import X,powerset
+from ingPro import ingPro
+ingredients,recipes,products,ingredients_names - ingPro()
+ingredients,recipes,products,ingredients_names = ingPro()
+len(products)
+r = products
+products = recipes
+recipes = r
+len(products)
+A=product(10000)
+A=product[10000]
+A=products[10000]
+b=products[ 9999]
+A
+A = A['title'].split(' ')
+B = B['title'].split(' ')
+B = b['title'].split(' ')
+len(A)
+len(B)
+A
+B
+products[ 9998]['title']
+B = products[ 9998]['title'].split(' ')
+len(B)
+PB = list(powerset(B))
+PB[0]
+X((),[1])
+z
+z = ()
+[ a for a in z]
+for x in PB:
+	x = [a for a in x]
+	print x
+X([],[1])
+exit()
+from X import X,powerset
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_names = ingPro()
+A = products[9998]['title'].split(' ')
+A
+B = products[10000]['title'].split(' ')
+X([],[1])
+len(A)
+PA = list(powerset(A))
+for x in PA:
+	print(x)
+	print( X(x,A) )
+acc = []
+for x in PA:
+	Z = X(x,A) 
+	if len(Z)>len(acc):
+		acc=Z
+Z
+for x in PA:
+acc
+PA
+('Cadbury','Chocolate',) in PA
+X(('Cadbury','Chocolate',),B)
+def longest(l):
+    if(not isinstance(l, list)): return(0)
+    return(max([len(l),] + [len(subl) for subl in l if isinstance(subl, list)] +
+        [longest(subl) for subl in l]))
+longest([[],[1]])
+for x in PA:
+	Z = X(x,PA)
+	if len(Z)>0:
+		if len(Z[0])>len(acc):
+			acc = z[0]
+acc
+print('\n'.join(PA))
+print('\n'.join([str(a) for a in PA]))
+for sub in PA:
+	Z = X(sub,B)
+	if Z!=[]:
+		print(Z)
+A
+B
+for sub in PA:
+	Z = X(sub,B)
+	if Z!=[]:
+		print(Z)
+		print(len(Z[0])
+		if len(Z[0])>len(acc):
+len(acc)
+acc
+for sub in PA:
+	Z=X(sub,B)
+acc =[]
+for sub in PA:
+	Z = X(sub,B)
+	if z!=[]:
+		if len(z[0][0])>acc:
+			acc = z[0][0]
+for sub in PA:
+	Z = X(sub,B)
+	if z!=[]:
+for sub in PA:
+	z = X(sub,B)
+	if z!=[]:
+		if len(z[0][0])>acc:
+			acc = z[0][0]
+for sub in PA:
+	z = X(sub,B)
+	if z!=[]:
+		if len(z[0][0])>len(acc):
+			acc = z[0][0]
+acc
+len(X(PA[1],B)[0][0])
+for sub in PA:
+	z = X(sub,B)
+	if z!=[]:
+		if len(z[0])>len(acc):
+			acc = z[0]
+acc
+exit
+from ingPro import ingPro
+ingredients,products,recipes,ingredients_name = ingrPro()
+ingredients,products,recipes,ingredients_name = ingPro()
+from X import match as X.match
+from X import match as Xmatch
+r = [[Xmatch(p1,p2) for p1 in products[:100]] for p2 in products[:100]]
+from X import match as Xmatch
+r = [[Xmatch(p1,p2) for p1 in products[:100]] for p2 in products[:100]]
+exit
+from ingPro import ingPro
+ingredients,products,recipes,ingredient_names = ingPro()
+len(products)
+from numpy import mean 
+mean([len(p['title'].split(' ')) for p in products])
+from X import X
+X([1,2,3],[1,2,3,1,2,3])
+import pickle 
+from open('products_names_sort.pkl','rb') as f:
+with open('products_names_sort.pkl','rb') as f:
+	products_names_sort = pickle.load(f)
+for i in range(100):
+	for n in range(i+1,100):
+		match(products_names_sort[i],products_names_sort[n])
+from X1 import match
+exit
+from X1 import match
+import pickler
+import pickle
+with open('products_names_sort.pkl','rb') as f:
+	products_names_sort = pickle.load(f)
+for i in range(100):
+	for n in range(i+1,100):
+		match(products_names_sort[i],products_names_sort[n])
+from X1 import match
+for i in range(100):
+	for n in range(i+1,100):
+		match(products_names_sort[i],products_names_sort[n])
+exit
+import pickle 
+with open('products_names_sort.pkl','rb') as f:
+	products_names_sort = pickle.load(f)
+from X1 import match
+match([1,2,3],[1,2,3])
+print('\n',join([str(a) for a in match([1,2,3],[1,2,3])]))
+print('\n'.join([str(a) for a in match([1,2,3],[1,2,3])]))
+from X1 import powerset
+list(powerset([1,2,3]))
+from X1 import X
+X([1,2,3],[1,2,3])
+X([3],[3])
+X([2,3],[2,3])
+map( lambda x:[(A[0],B[n])]+x , [[(3, 3)]] )
+list(map( lambda x:[(A[0],B[n])]+x , [[(3, 3)]] ))
+list(map( lambda x:[(2,2)]+x , [[(3, 3)]] ))
+A = [1,2,3]
+B= A
+for n in range(0,0):
+	print(1)
+from X1 import X
+X([1,2,3],[1,2,3])
+[1,2,3]==[1,2,3]
+exit()
+from X1 import X
+X([1,2,3],[1,2,3])
+import pickle
+from X1 import match 
+with open('products_names_sort.pkl','rb') as f:
+	products_names_sort = pickle.load(f)
+for i in range(0,100):
+	for n in range(i+1,100):
+		match(products_names_sort[i],products_names_sort[n])
+for i in range(0,100):
+	for n in range(i+1,100):
+		match(products_names_sort[i][0],products_names_sort[n][0])
+products_names_sort[-1]
+print('\n'.join([a[0] for a in products_names_sort[:10]]))
+print('\n'.join([str(a[0]) for a in products_names_sort[:10]]))
+match(products_names_sort[0][0],products_names_sort[1][0])
+products_names_sort[0][0]
+products_names_sort[1][0]
+acc = 0
+for i in range(len(products_names_sort)):
+	if products_names_sort[i][0]==products_names_sort[i+1][0]:
+		acc+=1
+acc
+products_names_sort[2][0]
+match(products_names_sort[0][0],products_names_sort[2][0])
+match(products_names_sort[2][0],products_names_sort[1][0])
+[a for a in match(products_names_sort[2][0],products_names_sort[1][0]) where a!=[]]
+[a for a in match(products_names_sort[2][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[5][0],products_names_sort[1][0]) where a!=[]]
+[a for a in match(products_names_sort[5][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[500][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[501][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[507][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[40000][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[39999][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[39599][0],products_names_sort[1][0]) if a!=[]]
+[a for a in match(products_names_sort[39599][0],products_names_sort[500][0]) if a!=[]]
+[a for a in match(products_names_sort[39599][0],products_names_sort[777][0]) if a!=[]]
+[[a for a in match(products_names_sort[i][0],products_names_sort[777][0]) if a!=[]] for i in range(100)]
+[[a for a in match(products_names_sort[i][0],products_names_sort[777][0]) if a!=[]] for i in range(100) if len(products_names_sort[i][0])>len(products_names_sort[777])]
+[[a for a in match(products_names_sort[i][0],products_names_sort[777][0]) if a!=[]] for i in range(100) if len(products_names_sort[i][0])<len(products_names_sort[777])]
+[[a for a in match(products_names_sort[i][0],products_names_sort[777][0]) if a!=[]] for i in range(1000) if len(products_names_sort[i][0])<len(products_names_sort[777])]
+[[a for a in match(products_names_sort[i][0],products_names_sort[777][0]) if a!=[]] for i in range(10000) if len(products_names_sort[i][0])<len(products_names_sort[777])]
+products_names_sort[777]
+p = products_names_sort
+[[a for a in match(p[i][0],p[777][0]) if a!=[]] for i in range(778,1000)]
+[[a for a in match(p[i][0],p[777][0]) if a!=[]] for i in range(778,800)]
+for i in range(0,len(p)):
+	for n in range(i+1,len(p)):
+		if len(p[i][0])<len(p[n][0]):
+			throw Except
+for i in range(0,len(p)):
+		if len(p[i][0])<len(p[n][0]):
+	for n in range(i+1,len(p)):
+for i in range(0,len(p)):
+	for n in range(i+1,len(p)):
+		if len(p[i][0])<len(p[n][0]):
+			print("Warning")
+for i in range(0,len(p)):
+	print(i)
+	for n in range(i+1,len(p)):
+		if len(p[i][0])<len(p[n][0]):
+			print("Warning")
+import time
+def time(fun):
+	t = time.time()
+	fun()
+	return time.time()-t
+exit()
+import pickle 
+with open('products.pkl','rb') as f:
+	products = pickle.load(f)
+product_titles = [(p['title'],pos) for p,pos in zip(products,range(len(products)))]
+with open(;products_titles.pkl','wb') as f:
+with open('products_titles.pkl','wb') as f:
+	pickle.dump(product_titles,f)
+exit
+from data.X1 import match
+import pickle
+with open('data/products_titles.pkl','rb') as f:
+	p = pickle.load(f)
+p[0]
+p[2]
+p[1]
+match(p[0][0],p[1][0])
+from data.X1 import X
+X(P[1][0],P[0][0])
+X(p[1][0],p[0][0])
+X(p[1][0][0:3],p[0][0])
+products = p
+p=None
+p
+products
+products_titles = [(p[0].split(' '),p[1]) for p in products]
+with open('data/products_titles.pkl','wb') as f:
+	pickle.dump(products_titles,f)
+p = products_titles
+match(p[0],p[1][0])
+match(p[0][0],p[1][0])
+p[0]
+p[1]
+xit()
+import time
+a = time.time()
+b = time.time()-a
+b
+print('%d'%b)
+exit()
+imort pickle
+import pickle
+with open('learning_vertulisation/searchProducts/data/products_titles.pkl','rb') as f:
+	p = pickle.load(f)
+len(p)
+p[35000]
+p[35001]
+print({a:1,b:2})
+print({'a':1,'b':2})
+import pickle
+def convertTuplets(tupple_list):
+    return' '.join([t[0] for t in tupple_list])
+def doStuff(row):
+    #get live rows
+    row = [cell for cell in row if cell!=[]]
+    matches_ofa_row = [matches for matches, a, b in row]
+    for cell in matches_ofa_row:
+        doCellStuff(ms)
+def doCellStuff(list_of_matches):
+    list_untupled_matched=sum([[convertTuplets(match) for match in matches] for matches in list_of_matches])
+    #order strings smallest to largest
+    list_untupled_matched.sort(key=len)
+    #put them in the hash
+    if list_untupled_matched==[]:
+        return 1
+    main_match = list_untupled_matched[-1]
+    if main_match in bigDic.keys():
+        bigDic[main_match][0] += 1
+        bigDic[main_match][1] += 1
+    else:
+        bigDic[main_match] = [1,1]
+    for match in list_untupled_matched[:-1]:
+        if match in bigDic.keys():
+            bigDic[match][0] += 1
+        else:
+            bigDic[match] = [1,0]
+bigDic ={}
+for i in range(100):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+def doStuff(row):
+    #get live rows
+    row = [cell for cell in row if cell!=[]]
+    matches_ofa_row = [matches for matches, a, b in row]
+    for cell in matches_ofa_row:
+        doCellStuff(cell)
+for i in range(100):
+def doStuff(row):
+    #get live rows
+    row = [cell for cell in row if cell!=[]]
+    matches_ofa_row = [matches for matches, a, b in row]
+    for cell in matches_ofa_row:
+        doCellStuff(cell)
+def doStuff(row):
+    #get live rows
+    row = [cell for cell in row if cell!=[]]
+    matches_ofa_row = [matches for matches, a, b in row]
+    for cell in matches_ofa_row:
+        doCellStuff(cell)
+for i in range(100):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for i in range(1,100):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+A[0][0][0]
+def doCellStuff(list_of_matches):
+    print([[convertTuplets(match) for match in matches] for matches in list_of_matches])
+    list_untupled_matched=sum([[convertTuplets(match) for match in matches] for matches in list_of_matches])
+    #order strings smallest to largest
+    list_untupled_matched.sort(key=len)
+    #put them in the hash
+    if list_untupled_matched==[]:
+        return 1
+    main_match = list_untupled_matched[-1]
+    if main_match in bigDic.keys():
+        bigDic[main_match][0] += 1
+        bigDic[main_match][1] += 1
+    else:
+        bigDic[main_match] = [1,1]
+    for match in list_untupled_matched[:-1]:
+        if match in bigDic.keys():
+            bigDic[match][0] += 1
+        else:
+            bigDic[match] = [1,0]
+for i in [1,2]:
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+sum([[], ["Sainsbury's"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+)
+def doCellStuff(list_of_matches):
+    print([[convertTuplets(match) for match in matches] for matches in list_of_matches])
+    list_untupled_matched=[[convertTuplets(match) for match in matches] for matches in list_of_matches]
+    #order strings smallest to largest
+    list_untupled_matched.sort(key=len)
+    #put them in the hash
+    if list_untupled_matched==[]:
+        return 1
+    main_match = list_untupled_matched[-1]
+    if main_match in bigDic.keys():
+        bigDic[main_match][0] += 1
+        bigDic[main_match][1] += 1
+    else:
+        bigDic[main_match] = [1,1]
+    for match in list_untupled_matched[:-1]:
+        if match in bigDic.keys():
+            bigDic[match][0] += 1
+        else:
+            bigDic[match] = [1,0]
+for i in range(1,100):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+acc = []
+for e in [[], ["Sainsbury's"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+for e in [[], ["Sainsbury's"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]:
+	acc+=e
+acc
+def doCellStuff(list_of_matches):
+    print([[convertTuplets(match) for match in matches] for matches in list_of_matches])
+    list_untupled_matched=[[convertTuplets(match) for match in matches] for matches in list_of_matches]
+    #for some reason the sum function doesn't work on the above 
+    match_list_cleaned = []
+    for e in list_untupled_matched:
+        match_list_cleaned+=e
+    #order strings smallest to largest
+    match_list_cleaned.sort(key=len)
+    #put them in the hash
+    if match_list_cleaned==[]:
+        return 1
+    main_match = match_list_cleaned[-1]
+    if main_match in bigDic.keys():
+        bigDic[main_match][0] += 1
+        bigDic[main_match][1] += 1
+    else:
+        bigDic[main_match] = [1,1]
+    for match in match_list_cleaned[:-1]:
+        if match in bigDic.keys():
+            bigDic[match][0] += 1
+        else:
+            bigDic[match] = [1,0]
+for i in range(1,100):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+bigDic
+for key in bigDic.keys():
+	if bigDic[key][1]>1000:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for i in range(100,2000):
+def doCellStuff(list_of_matches):
+    list_untupled_matched=[[convertTuplets(match) for match in matches] for matches in list_of_matches]
+    #for some reason the sum function doesn't work on the above 
+    match_list_cleaned = []
+    for e in list_untupled_matched:
+        match_list_cleaned+=e
+    #order strings smallest to largest
+    match_list_cleaned.sort(key=len)
+    #put them in the hash
+    if match_list_cleaned==[]:
+        return 1
+    main_match = match_list_cleaned[-1]
+    if main_match in bigDic.keys():
+        bigDic[main_match][0] += 1
+        bigDic[main_match][1] += 1
+    else:
+        bigDic[main_match] = [1,1]
+    for match in match_list_cleaned[:-1]:
+        if match in bigDic.keys():
+            bigDic[match][0] += 1
+        else:
+            bigDic[match] = [1,0]
+for i in range(100,2000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for i in range(2000,10000):
+with open('foodDictionary.pkl','wb') as f:
+	pickle.dump(bigDic,f)
+for i in range(2000,10000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for key in bigDic.keys():
+	if bigDic[key][1]>5000:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for i in range(10000,15000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000 and key.find(' '):
+		print("%s:		%s"%(key,str(bigDic[key])))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000 and key.find(' ')!=-1:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for i in range(15000,18543):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for key in bigDic.keys():
+	if bigDic[key][1]>1000 and key.find(' ')!=-1:
+		print("%s:		%s"%(key,str(bigDic[key])))
+for key in bigDic.keys():
+def hasNumbers(inputString):
+    return any(char.isdigit() for char in inputString)
+for key in bigDic.keys():
+	if bigDic[key][1]>500 and key.find(' ')!=-1 and not hasNumbers(key):
+		print("%s:		%s"%(key,str(bigDic[key])))
+def hasNumbers(inputString):
+    return any(char.isdigit() or char=='&' for char in inputString)
+for key in bigDic.keys():
+	if bigDic[key][1]>100 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1:
+		print("%s:		%s"%(key,str(bigDic[key])))
+with open('foodDictionary.pkl','wb') as f:
+	pickle.dump(bigDic,f)
+for i in range(20000,30000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+with open('foodDictionary.pkl','wb') as f:
+	pickle.dump(bigDic,f)
+for key in bigDic.keys():
+	if bigDic[key][1]>100 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1:
+		print("%s:		%s"%(key,str(bigDic[key])))
+keys_order=[(key]+bigDic[key] for key in bigDic.keys() if bigDic[key][1]>100 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1]
+keys_order=[[key]+bigDic[key] for key in bigDic.keys() if bigDic[key][1]>100 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1]
+keys_order.sort(key=lambdax:x[2],reverse=true)
+true
+keys_order.sort(key=lambda x:x[2],reverse=True)
+keys_order[0]
+keys_order[1]
+keys_order[2]
+keys_order[3]
+len(key_order)
+len(keys_order)
+print('\n'.join([o[0] for o in keys_order]))
+for i in range(30000,43000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+len(bigDic.keys())
+keys_order=[[key]+bigDic[key] for key in bigDic.keys() if bigDic[key][1]>100 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1]
+keys_order.sort(key=lambda x:x[2],reverse=True)
+print('\n'.join([o[0] for o in keys_order]))
+keys_order.sort(key=lambda x:float(x[2])/x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order]))
+keys_order.sort(key=lambda x:float(x[2])-100/x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order]))
+keys_order.sort(key=lambda x:float(x[2])-200/x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order]))
+keys_order=[[key]+bigDic[key] for key in bigDic.keys() if bigDic[key][1]>10 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1]
+keys_order.sort(key=lambda x:float(x[2])-200/x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+print('\n'.join([o[0] for o in keys_order[30:60]]))
+print('\n'.join([o[0] for o in keys_order[100:130]]))
+print('\n'.join([o[0] for o in keys_order[200:230]]))
+print('\n'.join([o[0] for o in keys_order[300:330]]))
+print('\n'.join([o[0] for o in keys_order[400:430]]))
+print('\n'.join([o[0] for o in keys_order[600:630]]))
+print('\n'.join([o[0] for o in keys_order[1000:1030]]))
+print('\n'.join([o[0] for o in keys_order[1100:1130]]))
+print('\n'.join([o[0] for o in keys_order[1200:1230]]))
+print('\n'.join([o[0] for o in keys_order[1300:1330]]))
+print('\n'.join([o[0] for o in keys_order[1400:1430]]))
+i
+for i in range(34247,43000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+for i in range(35000,43000):
+    print("Opening: %d"%i)
+    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+keys_order=[[key]+bigDic[key] for key in bigDic.keys() if bigDic[key][1]>10 and key.find(' ')!=-1 and not hasNumbers(key) and key.find('Sainsbury\'s')==-1]
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:float(x[2])-200/x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+print('\n'.join([o[0] for o in keys_order[1400:1430]]))
+print('\n'.join([o[0] for o in keys_order[1500:1530]]))
+print('\n'.join([o[0] for o in keys_order[1600:1630]]))
+keys_order.sort(key=lambda x:float(x[2])-0.01*x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:float(x[2])-x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:float(x[2])+0.01*x[1],reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:float(x[1]),reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:float(x[0]),reverse=True)
+keys_order.sort(key=lambda x:float(x[2]),reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+keys_order=[[key]+bigDic[key] for key in bigDic.keys()]
+keys_order.sort(key=lambda x:float(x[2]),reverse=True)
+print('\n'.join([o[0] for o in keys_order[:30]]))
+print('\n'.join([o[0] for o in keys_order[:10]]))
+print('\n'.join([o[0] for o in keys_order[:100]]))
+print('\n'.join([o[0] for o in keys_order[:1000]]))
+print('\n'.join([o[0] for o in keys_order[:10000]]))
+print('\n'.join([str(o) for o in keys_order[9000:10000]]))
+keys_order.sort(key=lambda x:float(x[1]-x[2])/x[2],reverse=True)
+max
+keys_order.sort(key=lambda x:float(x[1]-x[2])/max(x[2],0.01),reverse=True)
+print('\n'.join([str(o) for o in keys_order[:30]]))
+keys_order.sort(key=lambda x:x[2]/float(x[1]-x[2]))
+print('\n'.join([str(o) for o in keys_order[:30]]))
+with open('foodDictionary.pkl','wb') as f:
+	pickle.dump(bigDic,f)
+exit()
+import readline
+readline.write_history_file('analysing_data.txt')
