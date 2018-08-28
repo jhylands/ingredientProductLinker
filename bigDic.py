@@ -8,13 +8,9 @@ list_matches = []
 import pickle
 
 
-for i in range(len(products)):
-    print("Opening: %d"%i)
-    with open('learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
-        doStuff(pickle.load(f))
-
 bigDic ={}
-
+def getBigDic():
+    return bigDic
 
 def doStuff(row):
     #get live rows
@@ -25,7 +21,6 @@ def doStuff(row):
 
 
 def doCellStuff(list_of_matches):
-    print([[convertTuplets(match) for match in matches] for matches in list_of_matches])
     list_untupled_matched=[[convertTuplets(match) for match in matches] for matches in list_of_matches]
     #for some reason the sum function doesn't work on the above 
     match_list_cleaned = []
@@ -47,6 +42,11 @@ def doCellStuff(list_of_matches):
             bigDic[match][0] += 1
         else:
             bigDic[match] = [1,0]
+for i in range(1,42000):
+    print("Opening: %d"%i)
+    with open('data/%d.pkl'%i,'rb') as f:#'learning_vertulisation/searchProducts/data/%d.pkl'%i,'rb') as f:
+        doStuff(pickle.load(f))
+
 
 #for i in range(len(list_untupled_matched)):
 #    for n in range(i+1,len(list_untupled_matched)):
