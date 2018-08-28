@@ -1,0 +1,193 @@
+from tesco_spider import GrocerySpider as gs
+exit()
+import pickle
+with open('product_titles.pkl','rb') as f:
+	products = pickle.load(f)
+with open('product_titles.pkl','rb') as f:
+	products = pickle.loads(f)
+with open('products_titles.pkl','rb') as f:
+	products = pickle.loads(f)
+with open('products_titles.pkl','rb') as f:
+	products = pickle.load(f)
+len(products)
+counter = 0
+words {}
+words = {}
+for p in products:
+	for word in p.split(' '):
+import re
+pattern = re.compile('([^\s\w]|_)+')
+strippedList = lambda x:pattern.sub('', x)
+for p in products:
+	for word in strippedList(p).split(' '):
+		if not word in words:
+			counter+=1
+			words[word] = counter
+products[0]
+for p,q in products:
+	for word in strippedList(p).split(' '):
+		if not word in words:
+			counter+=1
+			words[word] = counter
+words.keys()
+productNumbers = [[words[word] for word in strippedList(p).split(' ')] for p,q in products]
+productNumbers[0]
+productNumbers[100]
+with open('productNumberLists.pkl','wb') a f:
+with open('productNumberLists.pkl','wb') as f:
+	pickle.dumps(productNumbers,f)
+with open('productNumberLists.pkl','wb') as f:
+	pickle.dump(productNumbers,f)
+productNumbers.sort(key=lambda x:len(x))
+productNumbers[0]
+productNumbers.sort(key=lambda x:len(x),reverse=True)
+productNumbers[0]
+with open('OrderedproductNumberLists.pkl','wb') as f:
+	pickle.dump(productNumbers,f)
+productNumbers.sort(key=lambda x:len(x))
+with open('OrderedproductNumberLists.pkl','wb') as f:
+	pickle.dump(productNumbers,f)
+exit()
+import pickle
+with open('data/5.pkl','rb') as f :
+	lst = pickle.load(f)
+len(lst)
+lst[0]
+lst[1]
+lst[2]
+lst[3]
+lst[4]
+lst[777]
+[a for a in lst if a !=[]]
+from X2 import match
+match([1,1],[1,1,2])
+a = match([1,1])
+a = match('The fox jumped'.split(' '))
+a('no fox is like that fox'.split(' '))
+with open('data/1.pkl','rb') as f :
+	lst = pickle.load(f)
+lst[0]
+lst[1]
+lst[2]
+[a for a in lst if a !=[]]
+with open('data/1.pkl','rb') as f :
+	lst = pickle.load(f)
+[a for a in lst if a !=[]]
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+len(p)
+p[0]
+p[100000]
+p[10000]
+a = matchGenerator(p[10000])
+frim X2 import match as matchGenerator
+from X2 import match as matchGenerator
+a = matchGenerator(p[10000])
+a(p[42000-777])
+a(p[42000])
+a(p[4202])
+a(p[42000])
+p[42000]
+p[42001]
+p[42002]
+p[4200]
+p[42003]
+p[42004]
+p[42005]
+p[42006]
+p[4200]
+p[42007]
+match = matchGenerator(p[42007])
+match(p[42005])
+from X2 import match as matchGenerator
+match = matchGenerator(p[42007])
+match(p[42005])
+exit()
+[a for a in lst if a !=[]]
+import pickle
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+from X2 import match as matchG
+p[42005
+]
+p[42007]
+match = matchG(p[42007])
+match(p[42008])
+exit()
+from X2 import match as matchG
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+import pickle
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+match = matchG(p[42007])
+match(p[42008])
+X(p[42007],p[42005])
+from X2 import X
+X(p[42007],p[42005])
+X(p[42007][1:3],p[42005])
+X(p[42007][1:],p[42005])
+X(p[42007][2:],p[42005])
+X(p[42007][:-1],p[42005])
+X(p[42007],p[42005])
+len(p[42005])
+p[42005]
+p[42007]
+p[42008]
+X(p[42008],p[42005])
+X(p[42008][0],p[42005])
+X(p[42008][0:1],p[42005])
+X(p[42008][0:2],p[42005])
+X([p[42008][0]],p[42005])
+X([p[42008][-1]],p[42005])
+exit
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+import pickle
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+from X2 import X
+X(p[42008][0:2],p[42005])
+exit()
+import pickle
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+from X2 import X
+X(p[42008][0:2],p[42005])
+X(p[42008][0:],p[42005])
+X(p[42008][0:4],p[42005])
+X(p[42008][0:3],p[42005])
+X(p[42008][0:2],p[42005])
+X(p[42008][0:1],p[42005])
+X(p[42008][0,3],p[42005])
+X(p[42008][[0,3]],p[42005])
+X(p[42008],p[42005])
+from X2 import match as matchG
+matchG(p[42005])
+match = matchG(p[42005])
+match(p[42008])
+exit()
+import pickle
+with open('OrderedproductNumberLists.pkl','rb') as f:
+	p = pickle.load(f)
+from X2 import match as matchG
+match = matchG(p[42005])
+match(p[42008])
+match = matchG(p[100])
+match(p[200])
+match(p[300])
+match(p[30000])
+match = matchG(p[42005])
+match(p[30000])
+match = matchG(p[30000])
+match(p[42008])
+p[30000]
+exit()
+import pickle
+exit()
+from ingPro import doStuff
+from bigDic import doStuff
+exit()
+import bigDic
+import readline
+readline.write_history_file('dictionary_based_approach.txt')
