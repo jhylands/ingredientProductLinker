@@ -1,188 +1,25 @@
-from getIngredientNouns import main as m
-w = m()
-exit()
-from getIngredientNouns import main as m
-w = m()
-w[0]
-w[1]
-w[2]
-w[3]
-w[4]
-exit()
-from getIngredientNouns import main as m
-w = m()
-w[0]
-w[1]
-w[2]
-w[3]
-w[4]
-w[5]
-w[6]
-w[7]
-w[8]
-w[9]
-w[10]
-w[11]
-w[12]
-w[13]
-w[14]
-w[15]
-w[16]
-w[18]
-w[16]
-exit()
+#product matching
 with open('ingredients.txt','r') as f:
 	ingredients = f.read().split('\n')
-ingredients[0]
-ingredients[145]
-ingredients[1459]
 import pickle
-with open(;products.pkl','rb') as f:
-with open('products.pkl','rb') as f:
-	products = pickle.loads(f)
 with open('products.pkl','rb') as f:
 	products = pickle.load(f)
-len(products)
-products[0]
-products[0]['Title']
-products[0]['title']
-[product for product in products if product['title'].lower().find('golden')!=-1 and product['title'].lower().find('syrup')!=-1]
 syrups = [product for product in products if product['title'].lower().find('golden')!=-1 and product['title'].lower().find('syrup')!=-1]
-len(syrups)
 print('\n'.join([a['title'] for a in syrups])
 )
-syrups[0]['description']
-syrups[0]
-syrups[0].ke
-syrups[0]['Description']
 soups = [product for product in products if product['title'].lower().find('tommato')!=-1 and product['title'].lower().find('soup')!=-1]
 print('\n'.join([a['title'] for a in soups]))
 soups = [product for product in products if product['title'].lower().find('tomato')!=-1 and product['title'].lower().find('soup')!=-1]
 print('\n'.join([a['title'] for a in soups]))
-from neo4j.v1 import GraphDatabase
 exit()
-import neo4j
-exit
-exit()
-import numpy
-import neo4j
-from neo4j.v1 import *
-exit()
-import readline
-from py2neo import Graph
-graph = Graph("bolt://localhost:8687",auth=('neo4j','yusurfRules321'))
-tx = graph.begin()
-from py2neo import Node
-from py2neo import Relationship as Rel
-a = Node("Person",name='alice')
-tx.create(a)
-b = Node('Person',name='Bob')
-tx.create(b)
-ab = Rel(a,'KNOWS',a)
-tx.create(ab)
-tx.commit()
-graph.exists(ab)
-ab = Rel(a,'KNOWS',b)
-tx.commit()
-tx.create(ab)
-tx = graph.begin()
-tx.create(ab)
-tx.commit()
-exit()_
-exit()
-import pcikle
-import pickle
-exit()
-from py2neo import Graph
-import pickle
-with open('recipe.pkl','rb') as f:
-	recipes = pickle.load(f)
-graph = Graph("bolt://localhost:8687",auth=('neo4j','yusurfRules321'))
-add ='''
-with split(tolower("{title}"),' ') as text
-unwind range(0,size(text)-2) AS i
-merge (w1:Word {name: text[i]})
-merge (w2:Word {name: text[i+1]})
-merge (w1)-[:NEXT]->(w2)
-'''
-add
-graph.run(add,title=recipes[0]['title']).evaluate()
-graph.run(add,title=recipes[0]['title'])
-c = graph.run(add,title=recipes[0]['title'])
-c.current['name']
-c
-tx = graph.begin()
-c = tx.evaluate(add,title=recipes[0]['title'])
-c
-tx.commit()
-cypher = graph.cypher
-add1 = add.format(title=recipes[0]['title'])
-add1='''
-with split(tolower("yummy chocolate smartie cake"),' ') as text
-unwind range(0,size(text)-2) AS i
-merge (w1:Word {name: text[i]})
-merge (w2:Word {name: text[i+1]})
-merge (w1)-[:NEXT]->(w2)
-'''
-grpah.run(add1)
-graph.run(add1)
-graph.run(add1).execute()
-graph.run(add1).evaluate()
-add2 = '''
-with split(tolower("%s"),' ') as text
-unwind range(0,size(text)-2) AS i
-merge (w1:Word {name: text[i]})
-merge (w2:Word {name: text[i+1]})
-merge (w1)-[:NEXT]->(w2)
-'''
-for recipe in recipes:
-	graph.run(add2%recipe['title']).evaluate()
-print('\n'.join([a['title'] for a in recipes[0:100]]))
-import re
-re.escape("'")
-print(re.escape("'"))
-exit()
-print('\d{4}')
-print('&')
-exit()
-import pickle
-with open('recipes.pkl','rb') as f:
-	recipes = pickle.load(f)
-exit()
+
 #segmentation fault bashed out
 #reloading
-imort spacy
-import spacy
-nlp = spacy.load('en')
-from getIngPro import getIngPro
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-#
-ingredients,products,recipes,ingredients_names = ingPro()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
-from ingPro import ingPro
-ingredients,products,recipes,ingredients_names = ingPro()
-exit()
+
+#experimenting with spacy on the data we have
 from ingPro import ingPro
 ingredients,products,recipes,ingredients_names = ingPro()
 import spacy
-nlp = space.load('en')
 nlp = spacy.load('en')
 product_titles = [p['title'] for p in products]
 product_titel_documents = [nlp(title) for title in product_titles]
@@ -199,17 +36,14 @@ product_titel_documents[1].tags_
 [e.tag_ for e in product_titel_documents[100]]
 [e.tag_ for e in product_titel_documents[99]]
 [e for e in product_titel_documents[99]]
-pickle
-import pcikel
+
+#working with X
 import pickle
 with open('test.pkl','wb') as f:
 	pickle.dump(product_titel_documents,f)
 with open('test.pkl','rb') as f:
 	a = pickle.load(f)
-a[0]
-from X import x
 from X import X
-products
 len(products)
 product[10000]['title']
 products[10000]['title']
@@ -299,6 +133,7 @@ X((),A)
 from X import X
 from X import powerset
 exit()
+
 from X inport X,powerset
 from X import X,powerset
 from ingPro import ingPro
@@ -335,6 +170,7 @@ for x in PB:
 	print x
 X([],[1])
 exit()
+
 from X import X,powerset
 from ingPro import ingPro
 ingredients,products,recipes,ingredients_names = ingPro()
@@ -415,6 +251,7 @@ for sub in PA:
 			acc = z[0]
 acc
 exit
+
 from ingPro import ingPro
 ingredients,products,recipes,ingredients_name = ingrPro()
 ingredients,products,recipes,ingredients_name = ingPro()
@@ -424,6 +261,7 @@ r = [[Xmatch(p1,p2) for p1 in products[:100]] for p2 in products[:100]]
 from X import match as Xmatch
 r = [[Xmatch(p1,p2) for p1 in products[:100]] for p2 in products[:100]]
 exit
+
 from ingPro import ingPro
 ingredients,products,recipes,ingredient_names = ingPro()
 len(products)
@@ -440,6 +278,7 @@ for i in range(100):
 		match(products_names_sort[i],products_names_sort[n])
 from X1 import match
 exit
+
 from X1 import match
 import pickler
 import pickle
@@ -453,6 +292,7 @@ for i in range(100):
 	for n in range(i+1,100):
 		match(products_names_sort[i],products_names_sort[n])
 exit
+n
 import pickle 
 with open('products_names_sort.pkl','rb') as f:
 	products_names_sort = pickle.load(f)
@@ -477,6 +317,7 @@ from X1 import X
 X([1,2,3],[1,2,3])
 [1,2,3]==[1,2,3]
 exit()
+
 from X1 import X
 X([1,2,3],[1,2,3])
 import pickle
@@ -546,6 +387,7 @@ def time(fun):
 	fun()
 	return time.time()-t
 exit()
+
 import pickle 
 with open('products.pkl','rb') as f:
 	products = pickle.load(f)
@@ -554,6 +396,7 @@ with open(;products_titles.pkl','wb') as f:
 with open('products_titles.pkl','wb') as f:
 	pickle.dump(product_titles,f)
 exit
+
 from data.X1 import match
 import pickle
 with open('data/products_titles.pkl','rb') as f:
@@ -585,7 +428,7 @@ b = time.time()-a
 b
 print('%d'%b)
 exit()
-imort pickle
+
 import pickle
 with open('learning_vertulisation/searchProducts/data/products_titles.pkl','rb') as f:
 	p = pickle.load(f)
@@ -907,5 +750,6 @@ print('\n'.join([str(o) for o in keys_order[:30]]))
 with open('foodDictionary.pkl','wb') as f:
 	pickle.dump(bigDic,f)
 exit()
+
 import readline
 readline.write_history_file('analysing_data.txt')

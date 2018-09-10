@@ -6,7 +6,7 @@ class NotIngredient(Exception):
     def __init__(self,text):
         print(text)
 
-def getStructure(ingredientText):
+def getStructure(ingredientText,getRegex=False):
     #define fractional numbers
     frac_re = "(?:[\u00BC-\u00BE]|[\u2150-\u215E])"
 
@@ -28,8 +28,8 @@ def getStructure(ingredientText):
     ammount_re = "(?:{num}\s?{unit}?\s?-\s?{num}\s?{unit}?|{num}\s?{unit}?)".format(num = number_re,unit = unit_re)
 
     ammount_helpful_re = "{ammount}(?:\s?\/\s?{ammount})?".format(ammount = ammount_re)
-
-    word_re = "((?:[a-z]+\s?\'?)+)"
+    #allowing for Crème fraîche https://stackoverflow.com/questions/1922097/regular-expression-for-french-characters
+    word_re = "((?:[a-zA-ZÀ-ÿ]+\s?\'?\-?)+)"
 
     ingredient_re = "(?:{help_ammount}\s)?{words}".format(help_ammount = ammount_helpful_re, words = word_re)
     struc = re.compile(ingredient_re,re.VERBOSE)
@@ -39,5 +39,23 @@ def getStructure(ingredientText):
     g = struc.search(ingredientText)
     if g is None:
         raise NotIngredient(ingredientText)
+    if getRegex:
+        return ingredient_re
     
-    return {'name':g.group(13)}
+    alternatives = {'amountLower':g.group(1) or g.group(5),
+     'unitLower':g.group(2) or g.group(6),
+     'amountHigher':g.group(3),
+     'unitHigher':g.group(4),
+     'alternativeAmountLower':g.group(7),
+     'alternativeUnitLower':g.group(8),
+     'alternativeAmountHigher':g.group(9) or g.group(11),
+     'alternativeUnitHigher':g.group(10) or g.group(12)}
+
+    
+
+    dic  = {'name':g.group(13),
+            'amount':g.group(1) or g.group(5),
+            'unit':g.group(2) or g.group(6)
+            }
+    dic.update(alternatives)
+    return dic
